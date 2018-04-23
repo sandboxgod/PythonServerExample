@@ -10,5 +10,5 @@ This application has also been dockerized. It listens on port 4000. You can buil
 
 ```bash
 docker build -t my-python .
-docker run -it --rm --name my-running-app -p 4000:4000 my-python
+docker run --name my-running-app -p 4000:4000 my-python
 ```
