@@ -13,4 +13,4 @@ docker build -t my-python .
 docker run --name my-running-app -p 4000:4000 my-python
 ```
 
-In this basic example, we create a non-blocking Python server. Atm, it simply checks for a 32 bit integer. The idea is this integer could be a message type that gets sent from any type of client application running in Unreal, Unity, etc.
+In this basic example, we create a non-blocking Python server. Atm, it simply checks for a 32 bit integer. The idea is this integer could be a message type that gets sent from any type of client application running in Unreal, Unity, etc. Depending upon the message type, we would then know how big the packet is and then proceed to grab the data and notify the other observers.
